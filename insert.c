@@ -1,3 +1,13 @@
+/*
+ * A program
+ * Insert a new [height]  into a chain which is supplied with its chain head
+ * The Interface is as follows:
+ * 	struct node * insert(struct node * head, ing height)
+ * It always return the current head struct node pointer
+ * Do take care of the special case. such as  head is empty
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -19,7 +29,7 @@ struct node * insert(struct node * head, int height)
 			head->next = NULL;
 			return head;
 		}else{
-			return NULL;
+			return NULL; // the head of the struct node chain does not exist
 		}
 	
 	}else{
@@ -27,7 +37,7 @@ struct node * insert(struct node * head, int height)
 			new->height = height;
 			new->next = NULL;
 		}else{
-			return head;
+			return head; //always return the head
 		}
 		
 		tmp = &head;

@@ -1,3 +1,17 @@
+/*
+ * There is some  monkeys, they will hold a poll to decide their King
+ * Rules:
+ * 1)TOTAL_MONKEY  monkeys in a circle
+ * 2)start position :POS
+ * 3)numbers to calculate:NUM
+ * 4)the NUM-th monkey get out
+ * 5)do again from 3)
+ *
+ * The last remaining one is the King
+ *
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,15 +43,15 @@ void monkey_create(unsigned char m)
 }
 
 
-
-#define POS	1
-#define	NUM	5
+#define TOTAL_MONKEY	16
+#define POS		1
+#define	NUM		5
 void main(void)
 {
  char cnt=0;
  struct node * cur;
  struct node * prev;
- monkey_create(16);
+ monkey_create(TOTAL_MONKEY);
  if(!monkey) return;
  cur  = monkey+POS;
  prev = cur;

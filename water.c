@@ -1,3 +1,9 @@
+/*
+ * There  is an array  of Wood Bar
+ * The value of each element stands for the Height of wood bar
+ * We need to calculate how much water can this wood array store if it rained ^-^
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
